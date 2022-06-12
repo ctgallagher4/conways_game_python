@@ -2,6 +2,9 @@ import numpy as np
 import time
 
 class Frame:
+    
+    '''A class for handling frames'''
+
     def __init__(self, x_dim, y_dim, num_steps, fill):
         '''Initialized a frame object'''
         self.x_dim = x_dim
@@ -47,6 +50,3 @@ class Frame:
             frame.show()
             frame.updateFrame()
             time.sleep(.1)
-
-fs = Frame(35, 19, 10000, .50)
-fs.runSimulation()
